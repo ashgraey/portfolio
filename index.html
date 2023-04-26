@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Project</title>
+    <!-- <link rel="icon" type="image/png" href="images/favicon_logo.svg" /> -->
+
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+        table, tr, td {
+            border-collapse: collapse;
+            /* border: 1px solid lightgray; */
+        }
+        #header {
+            margin: 0 auto;
+            text-align: left;
+            width: 1200px;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 40px;
+            font-family: 'Tilt Warp';
+        }
+
+        /* content */
+        #teamContent, .personalContent {
+            margin: 0 auto;
+            text-align: center;
+            width: 1200px;
+
+            margin-bottom: 150px;
+        }
+        
+        .contentTitle {
+            width: 100%;
+            height: 150px;
+        }
+        .contentTd {
+            width: 370px;
+            height: 330px;
+        }
+        .contentSpace {
+            width: 45px;
+            height: 45px;
+        }
+        .contentTitleMain {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333333;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contentTitleSub {
+            font-size: 16px;
+            color: #999999;
+        }
+        
+        .projectImg {
+            width: 300px;
+        }
+        .imgTitleMain {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+        }
+        .imgTitleSub {
+            font-size: 16px;
+            font-weight: bold;
+            color: #c5efec;
+            display: block;
+        }
+        .descTitleMain {
+            font-size: 30px;
+            font-weight: bold;
+            display: block;
+            height: 110px;
+            line-height: 150px;
+            color: white;
+        }
+        .descTitleSub {
+            font-size: 20px;
+            font-weight: bold;
+            color: #c5efec;
+            display: block;
+            height: 50px;
+        }
+        .projectDesc {
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            background-color: #81d8d0;
+            color: white;
+
+            display: none;
+        }
+        .descLink {
+            text-decoration: none;
+        }
+        .desc {
+            color: white;
+            line-height: 30px;
+        }
+
+        /* footer */
+        #footerTable {
+            margin: 0 auto;
+            width: 1200px;
+            font-size: 15px;
+            color: #333333;
+        }  
+        #footerTable td {
+            /* border: 1px solid black; */
+            width: 1200px;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="header">
+        <tr>
+            <td style="text-align: right;height: 100px;">
+                <a href="https://github.com/ashgraey">
+                    <img src="images/github.svg" style="width: 45px;">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 300px;vertical-align: top;"> 
+                <span style="color: #ac8124;">FRONT-END</span> DEVELOPER<br>
+                <span style="color: #ac8124;font-size: 20px;font-weight: normal;"><b>/안성현 포트폴리오</b></span><br>
+                <span style="color: #999999;font-size: 16px;font-weight: normal; line-height: 25px;"></span>
+            </td>
+        </tr>
+    </table>
+    <hr style="background-color: #81d8d0;height: 5px; border: 0;">
+
+    <table id="teamContent">
+        <tr>
+            <td class="contentTitle" colspan="5">
+                <span class="contentTitleMain"><span style="box-shadow: inset 0 -12px 0 #ac8124;">TEAM</span> EMONSMALL. PROJECT</span>
+                <span class="contentTitleSub">팀원들과 함께 작업한 <span style="color: #81d8d0; font-weight: bold;">EMONSMALL.</span> 프로젝트 입니다.</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="contentTd">
+                <a href="http://ash0127.cafe24app.com/main" target = "_blank">
+                    <img src="images/main.png">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <table class="personalContent">
+        <tr>
+            <td class="contentTitle" colspan="5">
+                <span class="contentTitleMain"><span style="box-shadow: inset 0 -12px 0 #c5efec;">Personal</span> JS DOM PROJECT</span>
+                <span class="contentTitleSub">JavaScript DOM 기반의 개인 프로젝트 모음 자료입니다.</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/joinMember.png">
+                        <span class="imgTitleMain">회원가입</span>
+                        <span class="imgTitleSub">Join Member</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="joinPage.html" target="_blank">
+                            <span class="descTitleMain">회원가입</span>
+                            <span class="descTitleSub">Join Member</span>
+                            <span class="desc">
+                                회원가입 로직 구현
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td class="contentSpace"></td>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/mycalendar.png">
+                        <span class="imgTitleMain">달력</span>
+                        <span class="imgTitleSub">Calendar</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="calendar.html" target="_blank">
+                            <span class="descTitleMain">달력</span>
+                            <span class="descTitleSub">Calendar</span>
+                            <span class="desc">
+                                캘린더 및 시계 구현
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td class="contentSpace"></td>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/kiosk.png">
+                        <span class="imgTitleMain">식권 자판기</span>
+                        <span class="imgTitleSub">Vending Machine</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="vending.html" target="_blank">
+                            <span class="descTitleMain">식권 자판기</span>
+                            <span class="descTitleSub">Vending Machine</span>
+                            <span class="desc">
+                                관리자, 구매자 시스템을 나누어서 구현
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/tictactoe.png">
+                        <span class="imgTitleMain">틱택토</span>
+                        <span class="imgTitleSub">Tic-Tac-Toe</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="tictactoe/index.html" target="_blank">
+                            <span class="descTitleMain">틱택토</span>
+                            <span class="descTitleSub">Tic-Tac-Toe</span>
+                            <span class="desc">
+                                두 명의 플레이어로 시작하며<br>
+                                먼저 한 줄을 완성시키는 <br>
+                                플레이어가 승리
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td class="contentSpace"></td>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/speedgame.png">
+                        <span class="imgTitleMain">순발력 게임</span>
+                        <span class="imgTitleSub">Speed Game</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="speedgame/index.html" target="_blank">
+                            <span class="descTitleMain">순발력 게임</span>
+                            <span class="descTitleSub">Speed Game</span>
+                            <span class="desc">
+                                1 to 50으로 이루어진 순발력 게임
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td class="contentSpace"></td>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/snake.png">
+                        <span class="imgTitleMain">스네이크 게임</span>
+                        <span class="imgTitleSub">Snake Game</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="snakegame/index.html" target="_blank">
+                            <span class="descTitleMain">스네이크 게임</span>
+                            <span class="descTitleSub">Snake Game</span>
+                            <span class="desc">
+                                뱀이 사과를 먹는 게임<br>
+                                벽에 충돌 or 꼬리에 충돌하면 게임종료
+                        </a>
+                    </div>
+                </div>
+                
+            </td>
+        </tr>
+
+        <!-- <tr>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/tetris.png">
+                        <span class="imgTitleMain">테트리스</span>
+                        <span class="imgTitleSub">Tetris</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="tictactoe/index.html">
+                            <span class="descTitleMain">테트리스</span>
+                            <span class="descTitleSub">Tetris</span>
+                            <span class="desc">
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td class="contentSpace"></td>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/speedgame.png">
+                        <span class="imgTitleMain">드래곤 플라이트</span>
+                        <span class="imgTitleSub">Dragon Flight</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="speedgame/index.html">
+                            <span class="descTitleMain">드래곤 플라이트</span>
+                            <span class="descTitleSub">Dragon Flight</span>
+                            <span class="desc">
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td class="contentSpace"></td>
+            <td class="contentTd">
+                <div class="slide">
+                    <div class="projectMain">
+                        <img class="projectImg" src="images/snake.png">
+                        <span class="imgTitleMain">스네이크 게임</span>
+                        <span class="imgTitleSub">Snake Game</span>
+                    </div>
+                    <div class="projectDesc" style="background-color: #ac8124;">
+                        <a class="descLink" href="speedgame/index.html">
+                            <span class="descTitleMain">스네이크 게임</span>
+                            <span class="descTitleSub">Snake Game</span>
+                            <span class="desc">
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                                프로젝트에 대한 설명을 기술하시오. <br>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+            </td>
+        </tr> -->
+    </table>
+
+    
+
+    <table id="footerTable">
+        <tr>
+            <td colspan="3" style="height: 20px;">
+                <hr style="background-color: #81d8d0;height: 1px; border: 0;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 90px; height: 80px; vertical-align: top;"><span style="font-weight: bold;">안 성 현 </span> | </td>
+            <td style="height: 80px;vertical-align: top;">https://github.com/fatherteresa/myportfolio</td>
+            <td style="width: 100px;height: 80px;vertical-align: top;">ashgraey@naver.com</td>
+        </tr>
+    </table>
+    
+
+    <script>
+
+        let slideList = document.querySelectorAll(".slide");
+        let projectMainList = document.querySelectorAll(".projectMain");
+        let projectDescList = document.querySelectorAll(".projectDesc");
+
+        
+        for(let i=0; i<projectMainList.length; i++) {
+            slideList[i].addEventListener("mouseenter", showDesc);
+            slideList[i].addEventListener("mouseleave", hideDesc);
+        }
+
+        function showDesc(e) {
+            for(let i=0; i<projectMainList.length; i++) {
+                if(e.target == slideList[i]) {
+                    projectMainList[i].style.display = "none";
+                    projectDescList[i].style.display = "block";
+                }
+            }
+        }
+        function hideDesc(e) {
+            for(let i=0; i<projectMainList.length; i++) {
+                if(e.target == slideList[i]) {
+                    projectMainList[i].style.display = "block";
+                    projectDescList[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>

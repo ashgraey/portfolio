@@ -9,3 +9,14 @@ h2 {
 #canvasCss {
   text-align: center;
 }
+
+  /* header */
+#top-header {
+  margin: 0 auto;
+  text-align: right;
+  width: 1200px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 40px;
+  font-family: 'Tilt Warp';
+}
